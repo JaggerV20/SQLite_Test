@@ -1,0 +1,611 @@
+7/24/24
+Filling tables and testing some searches.
+Added LargePortion to RecipeTags
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Grilled Lamprey", 22, "Grill", "Aquatic, Signature, Grilled", "Meat, Vegetarian");
+
+INSERT INTO RecipeTags(Aquatic, Signature, Grilled)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Fresh Tofu", 21, "Cutting Board", "Vegetarian, Homecooking, Mild, Good w/ Alcohol, Small Portion", "None");
+
+INSERT INTO RecipeTags(Vegetarian, Homecooking, Mild, GoodWAlcohol, SmallPortion)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Rice Ball", 6, "Cutting Board", "Economical, Vegetarian, Homecooking, Filling, Japanese", "None");
+
+INSERT INTO RecipeTags(Economical, Vegetarian, Homecooking, Filling, Japanese)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Boiled Tofu", 22, "Boiling Pot", "Vegetarian, Homecoooking, Mild", "None");
+
+INSERT INTO RecipeTags(Vegetarian, Homecooking, Mild)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Secret Dried Fish Crisps", 30, "Cutting Board", "Aquatic, Salty, Fresh, Small Portion", "None");
+
+INSERT INTO RecipeTags(Aquatic, Salty, Fresh, SmallPortion)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Dew Runny Eggs", 18, "Steamer", "Economical, Mild, Raw", "Meat, Aquatic, Greasy");
+
+INSERT INTO RecipeTags(Economical, Mild, Raw)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Roasted Mushroom", 18, "Grill", "Economical, Vegetarian, Salty, Hot, Fungus, Grilled", "None");
+
+INSERT INTO RecipeTags(Economical, Vegetarian, Salty, Hot, Fungus, Grilled)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Pork Bowl", 20, "Boiling Pot", "Meat, Homecooking, Filling", "None");
+
+INSERT INTO RecipeTags(Meat, Homecooking, Filling)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Pork & Trout Kebab", 26, "Grill", "Meat, Aquatic, Homecooking, Grilled", "None");
+
+INSERT INTO RecipeTags(Meat, Aquatic, Homecooking, Grilled)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Stinky Tofu", 24, "Frying Pan", "Vegetarian, Chinese, Peculiar, Spicy", "Sweet, Fruity");
+
+INSERT INTO RecipeTags(Vegetarian, Chinese, Peculiar, Spicy)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Potato Croquettes", 22, "Frying Pan", "Vegetarian, Homecooking, Greasy", "Refreshing");
+
+INSERT INTO RecipeTags(Vegetarian, Homecooking, Greasy)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Fried Cicada Sloughs", 19, "Frying Pan", "Economical, Greasy, Peculiar", "None");
+
+INSERT INTO RecipeTags(Economical, Greasy, Peculiar)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Tonkotsu Ramen", 60, "Boiling Pot", "Meat, Homecooking, Filling, Salty", "None");
+
+INSERT INTO RecipeTags(Meat, Homecooking, Filling, Salty)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Power Soup", 34, "Boiling Pot", "Meat, Mountain Delicacy, Hot, Strength-Boosting, Soup", "Small Portion, Refreshing");
+
+INSERT INTO RecipeTags(Meat, MountainDelicacy, Hot, StrengthBoosting, Soup)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Fried Lampreys", 27, "Frying Pan", "Aquatic, Greasy, Signature", "Refreshing");
+
+INSERT INTO RecipeTags(Aquatic, Greasy, Signature)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Udumbara Cake", 78, "Steamer", "Expensive, Premium, Legendary, Sweet, Photogenic, Wonderful, Dreamy", "Meat, Aquatic");
+
+INSERT INTO RecipeTags(Expensive, Premium, Legendary, Sweet, Photogenic, Wonderful, Dreamy)
+VALUES (1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Tofu Stew", 19, "Boiling Pot", "Economical, Vegetarian, Mild, Japanese, Hot", "None");
+
+INSERT INTO RecipeTags(Economical, Vegetarian, Mild, Japanese, Hot)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Miso Tofu", 21, "Boiling Pot", "Vegetarian, Homecooking, Mild, Japanese, Soup", "Greasy");
+
+INSERT INTO RecipeTags(Vegetarian, Homecooking, Mild, Japanese, Soup)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Deep Fried Tofu", 16, "Frying Pan", "Economical, Vegetarian, Homecooking, Greasy, Japanese", "None");
+
+INSERT INTO RecipeTags(Economical, Vegetarian, Homecooking, Greasy, Japanese)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Scholar's Ginkgo", 60, "Steamer", "Vegetarian, Chinese, Sweet, Cultural Heritage", "Salty");
+
+INSERT INTO RecipeTags(Vegetarian, Chinese, Sweet, CulturalHeritage)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Beef Bowl", 20, "Boiling Pot", "Meat, Homecooking, Filling", "None");
+
+INSERT INTO RecipeTags(Meat, Homecooking, Filling)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Vegetable Salad", 56, "Cutting Board", "Vegetarian, Mild, Raw, Refreshing", "Meat, Aquatic, Hot");
+
+INSERT INTO RecipeTags(Vegetarian, Mild, Raw, Refreshing)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Pork Rice Ball", 14, "Cutting Board", "Economical, Meat, Homecooking, Filling, Japanese", "None");
+
+INSERT INTO RecipeTags(Economical, Meat, Homecooking, Filling, Japanese)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Shirayuki", 98, "Boiling Pot", "Expensive, Meat, Aquatic, Premium, Japanese, Cultural Heritage", "None");
+
+INSERT INTO RecipeTags(Expensive, Meat, Aquatic, Premium, Japanese, CulturalHeritage)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Hunter's Casserole", 66, "Boiling Pot", "Expensive, Meat, Greasy, Filling, Mountain Delicacy, Hot", "None");
+
+INSERT INTO RecipeTags(Expensive, Meat, Greasy, Filling, MountainDelicacy, Hot)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Falling Blossoms", 50, "Cutting Board", "Aquatic, Premium, Sea Delicacy, Japanese, Raw, Photogenic, Small Portion", "Greasy");
+
+INSERT INTO RecipeTags(Aquatic, Premium, SeaDelicacy, Japanese, Raw, Photogenic, SmallPortion)
+VALUES (1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Pink Rice Ball", 30, "Cutting Board", "Aquatic, Vegetarian, Homecooking, Filling, Japanese, Hot", "None");
+
+INSERT INTO RecipeTags(Aquatic, Vegetarian, Homecooking, Filling, Japanese, Hot)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Carved Rose Salad", 20, "Cutting Board", "Vegetarian, Mild, Photogenic, Refreshing", "Meat, Hot");
+
+INSERT INTO RecipeTags(Vegetarian, Mild, Photogenic, Refreshing)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Imitation Bear Paw", 70, "Steamer", "Expensive, Meat, Aquatic, Premium, Mountain Delicacy, Fresh, Strength-Boosting, Wonderful", "None");
+
+INSERT INTO RecipeTags(Expensive, Meat, Aquatic, Premium, MountainDelicacy, Fresh, StrengthBoosting, Wonderful)
+VALUES (1, 1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Fried Pork Cutlet", 25, "Frying Pan", "Meat, Homecooking, Greasy, Filling", "None");
+
+INSERT INTO RecipeTags(Meat, Homecooking, Greasy, Filling)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Dumplings", 35, "Boiling Pot", "Vegetarian, Homecooking, Chinese, Cultural Heritage", "None");
+
+INSERT INTO RecipeTags(Vegetarian, Homecooking, Chinese, CulturalHeritage)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Pork Stir Fry", 15, "Frying Pan", "Economical, Meat, Homecooking, Greasy, Good w/ Alcohol, Chinese", "None");
+
+INSERT INTO RecipeTags(Economical, Meat, Homecooking, Greasy, GoodWAlcohol, Chinese)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Peach Tapioca", 55, "Boiling Pot", "Vegetarian, Sweet, Photogenic, Refreshing, Fruity, Soup", "None");
+
+INSERT INTO RecipeTags(Vegetarian, Sweet, Photogenic, Refreshing, Fruity, Soup)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Hodgepodge", 40, "Boiling Pot", "Meat, Homecooking, Fresh, Hot", "None");
+
+INSERT INTO RecipeTags(Meat, Homecooking, Fresh, Hot)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Energy Skewer", 50, "Grill", "Meat, Filling, Grilled", "None");
+
+INSERT INTO RecipeTags(Meat, Filling, Grilled)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Daimyo's Feast", 105, "Boiling Pot", "Expensive, Meat, Aquatic, Premium, Filling, Mountain Delicacy", "Homecooking, Economical");
+
+INSERT INTO RecipeTags(Expensive, Meat, Aquatic, Premium, Filling, MountainDelicacy)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Scones", 8, "Steamer", "Economical, Filling, Western", "None");
+
+INSERT INTO RecipeTags(Economical, Filling, Western)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Salmon Steak", 58, "Frying Pan", "Meat, Western, Fresh", "None");
+
+INSERT INTO RecipeTags(Meat, Western, Fresh)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Pancakes with Syrup", 22, "Frying Pan", "Filling, Western, Sweet", "None");
+
+INSERT INTO RecipeTags(Filling, Western, Sweet)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Peach & Shrimp Salad", 25, "Cutting Board", "Aquatic, Vegetarian, Mild, Sweet, Photogenic, Wonderful, Fruity", "Salty, Meat");
+
+INSERT INTO RecipeTags(Aquatic, Vegetarian, Mild, Sweet, Photogenic, Wonderful, Fruity)
+VALUES (1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Real - Seafood Miso Soup", 55, "Boiling Pot", "Aquatic, Homecooking, Mild, Soup", "None");
+
+INSERT INTO RecipeTags(Aquatic, Homecooking, Mild, Soup)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Kabayaki Lampreys", 42, "Frying Pan", "Aquatic, Vegetarian, Greasy, Fresh, Signature", "None");
+
+INSERT INTO RecipeTags(Aquatic, Vegetarian, Greasy, Fresh, Signature)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Eggs Benedict", 35, "Frying Pan", "Filling, Western, Raw, Small Portion", "Sweet, Fruity");
+
+INSERT INTO RecipeTags(Filling, Western, Raw, SmallPortion)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Classic Steak", 60, "Frying Pan", "Meat, Greasy, Filling, Western", "Sweet, Refreshing");
+
+INSERT INTO RecipeTags(Meat, Greasy, Filling, Western)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Sashimi Platter", 88, "Cutting Board", "Expensive, Aquatic, Premium, Japanese, Raw, Photogenic", "Hot");
+
+INSERT INTO RecipeTags(Expensive, Aquatic, Premium, Japanese, Raw, Photogenic)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Golden Ribs Soup", 65, "Boiling Pot", "Expensive, Meat, Chinese, Hot, Soup", "None");
+
+INSERT INTO RecipeTags(Expensive, Meat, Chinese, Hot, Soup)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Cantonese Char Siu", 70, "Grill", "Expensive, Meat, Greasy, Chinese, Sweet, Wonderful", "None");
+
+INSERT INTO RecipeTags(Expensive, Meat, Greasy, Chinese, Sweet, Wonderful)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Rainbow Pan-fried Pork Buns", 128, "Frying Pan", "Expensive, Meat, Premium, Legendary, Chinese, Fungus, Dreamy", "None");
+
+INSERT INTO RecipeTags(Expensive, Meat, Premium, Legendary, Chinese, Fungus, Dreamy)
+VALUES (1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Italian Risotto", 70, "Steamer", "Expensive, Filling, Western, Fresh, Fungus", "Sweet");
+
+INSERT INTO RecipeTags(Expensive, Filling, Western, Fresh, Fungus)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Niten Ichiryu", 90, "Grill", "Expensive, Meat, Premium, Mountain Delicacy, Cultural Heritage, Grilled, Aura-Bursting", "Homecooking");
+
+INSERT INTO RecipeTags(Expensive, Meat, Premium, MountainDelicacy, CulturalHeritage, Grilled, AuraBursting)
+VALUES (1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Creamy Vegetable Chowder", 20, "Steamer", "Vegetarian, Western, Fungus, Soup", "None");
+
+INSERT INTO RecipeTags(Vegetarian, Western, Fungus, Soup)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Pork & Bamboo Shoots Stir Fry", 25, "Frying Pan", "Meat, Homecooking, Good w/ Alcohol", "None");
+
+INSERT INTO RecipeTags(Meat, Homecooking, GoodWAlcohol)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Mochi", 30, "Cutting Board", "Japanese, Sweet, Small Portion", "Meat, Aquatic, Salty, Fresh");
+
+INSERT INTO RecipeTags(Japanese, Sweet, SmallPortion)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Flowing Somen", 40, "Cutting Board", "Vegetarian, Mild, Refreshing, Wonderful", "Greasy");
+
+INSERT INTO RecipeTags(Vegetarian, Mild, Refreshing, Wonderful)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Ino-Shika-Chou", 78, "Steamer", "Expensive, Meat, Premium, Photogenic, Cultural Heritage", "None");
+
+INSERT INTO RecipeTags(Expensive, Meat, Premium, Photogenic, CulturalHeritage)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Peach Yatsuhashi", 55, "Cutting Board", "Japanese, Sweet, Fruity", "Meat, Aquatic, Salty, Fresh");
+
+INSERT INTO RecipeTags(Japanese, Sweet, Fruity)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Kaguya-hime", 65, "Steamer", "Expensive, Meat, Premium, Legendary, Japanese, Photogenic, Cultural Heritage, Specialty", "None");
+
+INSERT INTO RecipeTags(Expensive, Meat, Premium, Legendary, Japanese, Photogenic, CulturalHeritage, Specialty)
+VALUES (1, 1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Immortal Turkey", 65, "Grill", "Expensive, Premium, Legendary, Westerm, Photogenic, Grilled, Aura-Bursting", "None");
+
+INSERT INTO RecipeTags(Expensive, Premium, Legendary, Western, Photogenic, Grilled, AuraBursting)
+VALUES (1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Steamed Eggs & Bamboo Shoots", 40, "Steamer", "Homecooking, Mild, Fungus", "None");
+
+INSERT INTO RecipeTags(Homecooking, Mild, Fungus)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Mapo Tofu", 32, "Frying Pan", "Vegetarian, Chinese, Hot, Spicy", "Sweet, Fruity, Refreshing");
+
+INSERT INTO RecipeTags(Vegetarian, Chinese, Hot, Spicy)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Lunar Love Biscuits", 66, "Cutting Board", "Expensive, Sweet, Photogenic, Small Portion, Specialty", "Meat, Aquatic, Vegetarian");
+
+INSERT INTO RecipeTags(Expensive, Sweet, Photogenic, SmallPortion, Specialty)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Beef Wellington", 150, "Frying Pan", "Expensive, Meat, Premium, Legendary, Mountain Delicacy, Western", "Sweet, Refreshing");
+
+INSERT INTO RecipeTags(Expensive, Meat, Premium, Legendary, MountainDelicacy, Western)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Pork & Mushroom Stir Fry", 20, "Frying Pan", "Meat, Homecooking, Greasy, Fungus", "None");
+
+INSERT INTO RecipeTags(Meat, Homecooking, Greasy, Fungus)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Nigiri Sushi", 28, "Cutting Board", "Aquatic, Mild, Japanese, Fresh, Raw, Cultural Heritage", "None");
+
+INSERT INTO RecipeTags(Aquatic, Mild, Japanese, Fresh, Raw, CulturalHeritage)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Secret Savory Mushroom Hotpot", 62, "Boiling Pot", "Expensive, Japanese, Fresh, Fungus, Specialty", "None");
+
+INSERT INTO RecipeTags(Expensive, Japanese, Fresh, Fungus, Specialty)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Deep Fried Shrimp Tempura", 22, "Frying Pan", "Greasy, Good w/ Alcohol", "Mild");
+
+INSERT INTO RecipeTags(Greasy, GoodWAlcohol)
+VALUES (1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Cream of Mushroom Soup", 28, "Boiling Pot", "Homecooking, Photogenic, Fungus", "None");
+
+INSERT INTO RecipeTags(Homecooking, Photogenic, Fungus)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Okonomiyaki", 24, "Frying Pan", "Japanese, Signature, Photogenic, Small Portion", "None");
+
+INSERT INTO RecipeTags(Japanese, Signature, Photogenic, SmallPortion)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Pickles", 16, "Cutting Board", "Economical, Vegetarian, Good w/ Alcohol, Salty, Small Portion", "None");
+
+INSERT INTO RecipeTags(Economical, Vegetarian, GoodWAlcohol, Salty, SmallPortion)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Mushroom Maiden's Tip Tap Pot", 112, "Boiling Pot", "Expensive, Aquatic, Greasy, Salty, Fresh, Photogenic, Hot, Fungus, Spicy", "None");
+
+INSERT INTO RecipeTags(Expensive, Aquatic, Greasy, Salty, Fresh, Photogenic, Hot, Fungus, Spicy)
+VALUES (1, 1, 1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Misery Cheese Sticks", 25, "Steamer", "Good w/ Alcohol, Salty, Fresh, Specialty", "None");
+
+INSERT INTO RecipeTags(GoodWAlcohol, Salty, Fresh, Specialty)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Crispy Spirals", 42, "Cutting Board", "Filling, Raw, Peculiar, Specialty", "Greasy");
+
+INSERT INTO RecipeTags(Filling, Raw, Peculiar, Specialty)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Sakura Pudding", 32, "Steamer", "Sweet, Photogenic, Refreshing, Small Portion, Specialty, Fruity", "Greasy, Salty");
+
+INSERT INTO RecipeTags(Sweet, Photogenic, Refreshing, SmallPortion, Specialty, Fruity)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Lion's Head", 28, "Boiling Pot", "Meat, Good w/ Alcohol, Fresh, Signature, Specialty", "Aquatic, Filling");
+
+INSERT INTO RecipeTags(Meat, GoodWAlcohol, Fresh, Signature, Specialty)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Cheese Omelette", 26, "Frying Pan", "Greasy, Salty, Fresh, Raw", "Meat");
+
+INSERT INTO RecipeTags(Greasy, Salty, Fresh, Raw)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Neko-manma", 26, "Cutting Board", "Aquatic, Fresh, Small Portion", "Greasy");
+
+INSERT INTO RecipeTags(Aquatic, Fresh, SmallPortion)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Ceiling-Longing Pie", 66, "Steamer", "Expensive, Good w/ Alcohol, Sea Delicacy, Signature, Photogenic, Peculiar, Specialty", "Meat");
+
+INSERT INTO RecipeTags(Expensive, GoodWAlcohol, SeaDelicacy, Signature, Photogenic, Peculiar, Specialty)
+VALUES (1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Salmon Tempura", 44, "Frying Pan", "Aquatic, Premium, Greasy, Fresh, Small Portion", "None");
+
+INSERT INTO RecipeTags(Aquatic, Premium, Greasy, Fresh, SmallPortion)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Giant Tamagoyaki", 60, "Frying Pan", "Premium, Filling, Japanese, Sweet, Strength-Boosting", "Good w/ Alcohol");
+
+INSERT INTO RecipeTags(Premium, Filling, Japanese, Sweet, StrengthBoosting)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Gloomy Fruit Pie", 36, "Cutting Board", "Salty, Fresh, Specialty, Fruity, Sour", "None");
+
+INSERT INTO RecipeTags(Salty, Fresh, Specialty, Fruity, Sour)
+VALUES (1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Energy Pudding", 42, "Steamer", "Sweet, Refreshing, Strength-Boosting, Small Portion, Fruity, Sour", "Greasy, Salty");
+
+INSERT INTO RecipeTags(Sweet, Refreshing, StrengthBoosting, SmallPortion, Fruity, Sour)
+VALUES (1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Instant*Death", 62, "Grill", "Expensive, Meat, Greasy, Filling, Mountain Delicacy, Strength-Boosting, Grilled", "None");
+
+INSERT INTO RecipeTags(Expensive, Meat, Greasy, Filling, MountainDelicacy, StrengthBoosting, Grilled)
+VALUES (1, 1, 1, 1, 1, 1, 1);
+
+ALTER TABLE RecipeTags
+ADD COLUMN LargePortion INTEGER DEFAULT 0;
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Dragon Carp", 142, "Steamer", "Expensive, Large Portion, Meat, Aquatic, Premium, Sea Delicacy, Chinese, Fresh, Sweet, Cultural Heritage, Fungus, Dreamy", "None");
+
+INSERT INTO RecipeTags(Expensive, LargePortion, Meat, Aquatic, Premium, SeaDelicacy, Chinese, Fresh, Sweet, CulturalHeritage, Fungus, Dreamy)
+VALUES (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Oedo Boat Feast", 206, "Cutting Board", "Expensive, Aquatic, Premium, Legendary, Good w/ Alcohol, Sea Delicacy, Japanese, Fresh, Raw, Signature, Photogenic, Cultural Heritage", "None");
+
+INSERT INTO RecipeTags(Expensive, Aquatic, Premium, Legendary, GoodWAlcohol, SeaDelicacy, Japanese, Fresh, Raw, Signature, Photogenic, CulturalHeritage)
+VALUES (1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("CAUTION!! Hellish Spice!", 108, "Frying Pan", "Expensive, Meat, Greasy, Salty, Photogenic, Hot, Strength-Boosting, Peculiar, Spicy", "Mild, Vegetarian");
+
+INSERT INTO RecipeTags(Expensive, Meat, Greasy, Salty, Photogenic, Hot, StrengthBoosting, Peculiar, Spicy)
+VALUES (1, 1, 1, 1, 1, 1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Biscay Biscuits", 26, "Grill", "Filling, Salty, Hot", "Sour");
+
+INSERT INTO RecipeTags(Filling, Salty, Hot)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Unzan Cotton Candy", 20, "Frying Pan", "Sweet, Wonderful, Specialty, Fruity", "Meat, Salty");
+
+INSERT INTO RecipeTags(Sweet, Wonderful, Specialty, Fruity)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Baked Sweet Potato", 25, "Grill", "Economical, Homecooking, Filling, Sweet", "Good w/ Alcohol");
+
+INSERT INTO RecipeTags(Economical, Homecooking, Filling, Sweet)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Honeyed Chestnuts", 30, "CUtting Board", "Sweet, Small Portion, Specialty", "None");
+
+INSERT INTO RecipeTags(Sweet, SmallPortion, Specialty)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Candied Sweet Potato", 30, "Frying Pan", "Vegetarian, Homecooking, Filling, Sweet", "Raw");
+
+INSERT INTO RecipeTags(Vegetarian, Homecooking, Filling, Sweet)
+VALUES (1, 1, 1, 1);
+
+UPDATE Recipes
+SET station = "Cutting Board"
+WHERE Recipes.id = 90;
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Pine Nut Cake", 46, "Steamer", "Mild, Specialty", "None");
+
+INSERT INTO RecipeTags(Mild, Specialty)
+VALUES (1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Bamboo Meat Pot", 42, "Boiling Pot", "Meat, Homecooking, Filling", "None");
+
+INSERT INTO RecipeTags(Meat, Homecooking, Filling)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Tomato Fries", 26, "Frying Pan", "Peculiar, Wonderful, Small Portion", "Aquatic");
+
+INSERT INTO RecipeTags(Peculiar, Wonderful, SmallPortion)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Red Bean Daifuku", 28, "Cutting Board", "Japanese, Sweet, Small Portion", "None");
+
+INSERT INTO RecipeTags(Japanese, Sweet, SmallPortion)
+VALUES (1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Plum Tea Rice", 32, "Boiling Pot", "Homecooking, Japanese", "None");
+
+INSERT INTO RecipeTags(Homecooking, Japanese)
+VALUES (1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Mushroom Herb Road", 26, "Boiling Pot", "Mild, Cultural Heritage, Fungus, Specialty", "None");
+
+INSERT INTO RecipeTags(Mild, CulturalHeritage, Fungus, Specialty)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Toon Pancake", 30, "Frying Pan", "Signature, Specialty", "None");
+
+INSERT INTO RecipeTags(Signature, Specialty)
+VALUES (1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Rice Powder Meat", 72, "Steamer", "Expensive, Meat, Homecooking, Mountain Delicacy", "Raw");
+
+INSERT INTO RecipeTags(Expensive, Meat, Homecooking, MountainDelicacy)
+VALUES (1, 1, 1, 1);
+
+INSERT INTO Recipes (name, cost, station, tags, prohibited)
+VALUES ("Urchin Steamed Egg", 112, "Steamer", "Expensive, Sea Delicacy, Fresh, Photogenic", "Mountain Delicacy");
+
+INSERT INTO RecipeTags(Expensive, SeaDelicacy, Fresh, Photogenic)
+VALUES (1, 1, 1, 1);
+
+SELECT * FROM Recipes
+JOIN RecipeTags
+ON Recipes.id = RecipeTags.id
+WHERE Japanese = 1 AND Sweet = 1;
+
+
