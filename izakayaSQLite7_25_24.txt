@@ -1,0 +1,53 @@
+7/25/24
+
+Writing some test scripts using the recipe database.
+I'll add some notes about the purpose of scripts.
+
+Search for recipes containing "Fruity" and "Sweet" tags.
+Only shows results from "Recipes" table, which improves readability
+SELECT Recipes.* FROM Recipes
+JOIN RecipeTags
+ON Recipes.id = RecipeTags.id
+WHERE Fruity = 1 AND Sweet = 1;
+
+Shows number of recipes for each station in descending order.
+Alias given for recipe count column because otherwise it shows "Count(Recipes.id)"
+SELECT Count(Recipes.id) AS "Recipe Count", Recipes.station FROM Recipes
+GROUP BY station
+ORDER BY Count(Recipes.id) DESC;
+
+Select row with highest price - There's a better way
+SELECT Recipes.* FROM Recipes
+WHERE cost = (
+SELECT MAX(cost) FROM Recipes
+);
+
+Better way to select row with highest price. LIMIT sets how many rows are displayed
+SELECT Recipes.* FROM Recipes
+ORDER BY cost DESC
+LIMIT 1;
+
+Select the 5 cheapest recipes
+SELECT Recipes.* FROM Recipes
+ORDER BY cost ASC
+LIMIT 5;
+
+Show average number and total number of recipes with "Aquatic" tag
+SELECT AVG(Aquatic) AS "Avg Aquatic Tags", SUM(Aquatic) AS "Total Aquatic Tags" FROM RecipeTags;
+
+Attempting to find most common tags. Will detail individual steps.
+
+Create a copy table
+CREATE TABLE TempTags AS SELECT * FROM RecipeTags;
+
+Drop id column
+ALTER TABLE TempTags
+DROP COLUMN id;
+
+Deleting table since this isn't going anywhere
+DROP TABLE TempTags;
+
+Closing notes
+SUM(*) doesn't work, so I think the only method would be to write every column individually.
+Even then, I think this is a difficult task. The sums are saved as columns rather than rows,
+so ORDER BY couldn't be used.
